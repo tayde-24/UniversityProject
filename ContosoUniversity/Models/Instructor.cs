@@ -5,9 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ContosoUniversity.Models
 {
-    public class Instructor
+    public class Instructor : Person
     {
-        public int ID { get; set; }
+        /*public int ID { get; set; }
 
         [Required]
         [Display(Name = "Last Name")]
@@ -20,18 +20,19 @@ namespace ContosoUniversity.Models
         [StringLength(50)]
         public string FirstMidName { get; set; }
 
+*/
+        /*[Display(Name = "Full Name")]
+        public string FullName
+        {
+            get { return LastName + ", " + FirstMidName; }
+        }*/
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Hire Date")]
         public DateTime HireDate { get; set; }
 
-        [Display(Name = "Full Name")]
-        public string FullName
-        {
-            get { return LastName + ", " + FirstMidName; }
-        }
-
         public ICollection<CourseAssignment> CourseAssignments { get; set; }
         public OfficeAssignment OfficeAssignment { get; set; }
+
     }
 }
