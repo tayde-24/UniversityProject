@@ -1,14 +1,15 @@
 ﻿@model ContosoUniversity.Models.Department
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Delete Department";
 }
 
-<h1>Delete</h1>
+@*<h1>Delete</h1>*@
 
 <p class="text-danger">@ViewData["ConcurrencyErrorMessage"]</p>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3 style="color:darkred"><i>Are you sure you want to delete this department?</i></h3>
+<p>Make sure before deleting this department. This will be deleted permanently.</p>
 <div>
     <h4>Department</h4>
     <hr />
