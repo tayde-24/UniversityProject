@@ -1,12 +1,48 @@
 ﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
 
 @{
-    ViewData["Title"] = "Student Body Statistics";
+    ViewData["Title"] = "About | Student Body Statistics";
 }
 
-<h2>Student Body Statistics</h2>
+<div class="flex-right">
+    <div class="image-right">
+        <img src="../images/rsz_painting1_1.jpg" alt="arts, art student painting">
+    </div>
+    <div class="image-right">
+        <img src="../images/rsz_festrep19.jpg" alt="theater">
+    </div>
+    <div class="image-right">
+        <img src="../images/rsz_singing_girl.jpg" alt="group of students singing">
+    </div>
+    <div class="image-right">
+        <img src="../images/rsz_film.jpg" alt="film students">
+    </div>
 
-<table>
+</div>
+
+<h2>About Us</h2>
+<p>
+    Resembool Valley University was founded in 1895 by the famously gifted Elric brothers that believed
+    that knowledge is a treasure beyond compare. Our university is located in the middle of a beautiful grove in
+    Rogue River, and our faculty and staff is wholeheartedly dedicated to help students achieve their dreams and
+    to serve others.
+</p>
+
+<br />
+
+<h3>Location</h3>
+<p>
+    Resembool Valley University is located in a beatiful country-side. Not far from the 
+    university, there are nice shops and a famous bakery shop that's been recently opened
+    by Winry Rockbell, one of our top Automail Mechanics alumni graduates. 25 miles from here,
+    you can visit the ocean and enjoy a relaxing get-away there.
+</p>
+<hr />
+
+<h2>Student Body Statistics</h2>
+<div class="">
+<table class="table-bordered">
+    <thead>
     <tr>
         <th>
             Enrollment Date
@@ -15,6 +51,7 @@
             Students
         </th>
     </tr>
+    </thead>
 
     @foreach (var item in Model)
     {
@@ -28,3 +65,25 @@
         </tr>
     }
 </table>
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="col-md-2 text-center grey"><h3>22:1</h3>Student to Faculty Ratio</div>
+    <div class="col-md-2 text-center grey"><h3>84%</h3>Admission Rate</div>
+    <div class="col-md-2 text-center grey"><h3>81%</h3>Receive Financial Aid</div>
+    <div class="col-md-2 text-center grey"><h3>59%</h3> First Generation College Students</div>
+</div>
+<br />
+<br />
+<br />
+<div class="row">
+    <div class="col-12 contact">
+        <h2>Contact Information</h2>
+        <p><b>RVU President:</b> Tayde A. Luevano</p>
+        <p><b>Phone:</b> (805) 302-XXXX</p>
+        <p><b>Email:</b> tayde_luevano@yahoo.com</p>
+        <p><b>Address:</b> 615 Lior Street, Resembool, CA 93021</p>
+
+    </div>
+</div>

@@ -3,25 +3,62 @@
 }
 
 <div class="jumbotron">
-    <h1>Contoso University</h1>
+    <div class="home">
+        <h1>Daring and Brilliant</h1>
+        <p><a class="" asp-controller="Home" asp-action="About">Check our numbers here &raquo;</a></p>
+    </div>
+</div>
+<div class="text-center">
+    <h2>Welcome to Resembool Valley University</h2>
+    <p>RVU has been honored as a University of Distinction based on its commitment
+        to helping undergraduate students learn, grow, and succeed. RVU has constantly
+        been ranked each year a the best university by
+        <i>Xing News and World Report</i>.
+    </p>
+</div>
+<div class="row padding">
+    
+    <div class="col-md-4">
+        <h2>Find Degrees</h2>
+        <p>With over 50 areas of study, you’ll find the right fit.</p>
+        <p><a class="btn btn-default" href="https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/data/ef-mvc/intro/samples/5cu-final">Find Yours &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>See Tuition & Fees</h2>
+        <p>83% of our students receive financial aid. RVU keeps learning affordable.</p>
+        <p><a class="btn btn-default" href="https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/data/ef-mvc/intro/samples/5cu-final">Afford Your Future &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Explore RVU</h2>
+        <p>Take a tour of the RVU campus and get an inside look from anywhere in the world.</p>
+        <p><a class="btn btn-default" href="https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/data/ef-mvc/intro/samples/5cu-final">Campus/Virtual Tour &raquo;</a></p>
+    </div>
 </div>
 <div class="row">
-    <div class="col-md-4">
-        <h2>Welcome to Contoso University</h2>
-        <p>
-            Contoso University is a sample application that
-            demonstrates how to use Entity Framework Core in an
-            ASP.NET Core MVC web application.
-        </p>
+    <div class="col-lg-7 col-10">
+        <h3>President's Message</h3>
+        Whether you are a prospective student, a current student, or a member of the community attending one
+        of our many cultural events, we hope you will feel at home here. <br><br>
+        Resembool Valley University was founded in 1895 by the famously gifted Elric brothers that believed
+        that knowledge is a treasure beyond compare. Our university is located in the middle of a beautiful grove in
+        Rogue River, and our faculty and staff is wholeheartedly dedicated to help students achieve their dreams and
+        to serve others.<br><br>
+        As the proud daughter of hard-working parents, I'm as the proud daughter of hard-working parents, it's a privilage to help others in this university to
+        find their path and achieve greatness in its many forms. I can't wait to work with you and will do my best to
+        provide the guidance that you need.
+        <br><br>Stay awesome, be kind to others, and whatever you do, <strong>never</strong> give up. You got this!
+        <br><br>Sincerely,<br><br>Tayde A. Luevano, MA<br><br>President
     </div>
-    <div class="col-md-4">
-        <h2>Build it from scratch</h2>
-        <p>You can build the application by following the steps in a series of tutorials.</p>
-        <p><a class="btn btn-default" href="https://docs.asp.net/en/latest/data/ef-mvc/intro.html">See the tutorial &raquo;</a></p>
+    <div class="col-md-4 image">
+        <div class="block">
+            <h2>Apply now</h2>
+            <p>Learn about eligibility, deadlines, and how to apply.</p>
+            <p><a class="btn btn-default" asp-controller="Students" asp-action="Index">Apply with confidence &raquo;</a></p>
+        </div>
     </div>
-    <div class="col-md-4">
+    @*<div class="col-md-4">
         <h2>Download it</h2>
         <p>You can download the completed project from GitHub.</p>
         <p><a class="btn btn-default" href="https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/data/ef-mvc/intro/samples/5cu-final">See project source code &raquo;</a></p>
-    </div>
+    </div>*@
 </div>
